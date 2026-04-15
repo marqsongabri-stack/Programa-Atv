@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Compras Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🛒 Lista de Compras</h1>
+
+  <div class="form">
+    <input id="nome" placeholder="Nome do item">
+
+    <select id="categoria">
+      <option>Alimentos</option>
+      <option>Hortifruti</option>
+      <option>Bebidas</option>
+      <option>Limpeza</option>
+      <option>Higiene</option>
+      <option>Padaria</option>
+    </select>
+
+    <button onclick="addItem()">Adicionar</button>
+  </div>
+
+  <div class="filtros">
+    <select id="filtroCategoria" onchange="loadItems()">
+      <option value="">Todas categorias</option>
+      <option>Alimentos</option>
+      <option>Hortifruti</option>
+      <option>Bebidas</option>
+      <option>Limpeza</option>
+      <option>Higiene</option>
+      <option>Padaria</option>
+    </select>
+
+    <select id="filtroStatus" onchange="loadItems()">
+      <option value="">Todos</option>
+      <option value="false">Pendentes</option>
+      <option value="true">Comprados</option>
+    </select>
+  </div>
+
+  <ul id="lista"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
