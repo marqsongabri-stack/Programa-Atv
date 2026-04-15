@@ -44,6 +44,7 @@ Retorna todos os itens cadastrados no sistema.
     "comprado": 1
   }
 ]
+
 ➕ 2. CRIAR ITEM
 🔹 Endpoint
 
